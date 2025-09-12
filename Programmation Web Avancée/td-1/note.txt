@@ -1,0 +1,12 @@
+GIT:
+git status
+git add --all
+git rm
+git commit -m "message"
+git push -u origin main
+git restore --staged
+git restore --staged *DS_Store
+
+Servers:
+php -S localhost:8000
+npx http-server
