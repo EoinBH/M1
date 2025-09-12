@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Eoin BRERETON HURLEY</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel='stylesheet' type='text/css' href='styles.css'>
+
+</head>
+<body>
+
+<form action="server-side.php" method="POST" id="form">
+<!--<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" id="form">-->
+
+<div id="EntrerDetails" class="cls">
+    <label>Nom :</label>
+    <input name="Nom" type="text" required="required" id="nom">
+    <br>
+    <label>Date d'anniversaire :</label>
+    <input name="Date" type="date" required="required" id="date">
+    <br>
+      <!--
+      <select name="Day" type="day" required="required" placeholder="Day" id="day">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      </select>
+      -->
+</div>
+
+<div id="submit">
+ <button class="button button2" type="submit" form="form">Submit</button>
+</div>
+</form>
+
+<!--
+<script>
+      var options = "";
+      for(var i = 0; i<31; i++) {
+            options += "<option value=" + i + ">+i+</option>";
+      }
+      document.getElementById("Day").innerHTML = options;
+</script>
+-->
+
+</body>
+<script src="index.js"></script>
+</html>
